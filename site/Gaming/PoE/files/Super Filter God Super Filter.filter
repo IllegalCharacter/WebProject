@@ -1,0 +1,231 @@
+# Welcome to the Path of Exile ItemScript Preview and Debug Tool.
+# 
+# Your item filter code goes here.
+# You see the effects of your filter on the right side.
+# Hover over an item to see the filter rule that applied to it.
+# Press Alt to see hidden items.
+# Press the Settings button to select a different item set.
+# Click the Help button on the bottom right for more tips and instructions.
+# 
+
+
+#---------------------------------------Currency---------------------------------------#
+Show
+    BaseType "Mirror of Kalandra"
+    SetFontSize 45
+    SetBackgroundColor 200 0 150 255
+    SetBorderColor 241 217 46
+    SetTextColor 241 217 46
+    PlayAlertSound 5 300
+
+Show
+    BaseType "Exalted Orb" "Divine Orb" "Eternal Orb"
+    SetFontSize 42
+    SetBackgroundColor 150 0 150 255
+    SetBorderColor 241 217 46
+    SetTextColor 241 217 46
+    PlayAlertSound 5 200
+
+Show
+    BaseType "Chaos Orb" "Regal Orb" "Blessed Orb" "Orb of Scouring" "Orb of Regret" "Vaal Orb"
+    SetFontSize 40
+    SetBackgroundColor 150 0 150 255
+    SetTextColor 241 217 46
+    PlayAlertSound 4 200
+
+Show
+    BaseType "Orb of Fusing" "Orb of Alchemy" "Silver Coin" "Perandus Coin"
+    SetFontSize 40
+    SetBackgroundColor 100 0 100 255
+    SetTextColor 241 217 46
+    
+Show
+    BaseType "Orb of Alteration" "Orb of Transmutation" "Orb of Augmentation" "Chromatic"
+    SetFontSize 40
+    SetBackgroundColor 100 0 100 255
+
+Show
+    BaseType "Scroll"
+    SetBackgroundColor 50 25 0 250
+
+Show
+    Class "Currency"
+    BaseType "Shrieking Essence" "Screaming Essence" "Wailing Essence"
+    SetBorderColor 0 0 0
+    SetBackgroundColor 0 100 200 250
+    SetTextColor 0 0 0
+
+Show
+    Class "Currency"
+    BaseType "Whispering Essence" "Muttering Essence" "Weeping Essence"
+    SetBorderColor 0 0 0
+    SetBackgroundColor 0 150 200 200
+    SetTextColor 0 0 0
+
+Show
+    Class "Currency"
+    BaseType "orruption"
+    SetBorderColor 200 0 0
+    SetBackgroundColor 200 0 0
+
+Show
+    Class Currency
+    SetBackgroundColor 50 0 50 200
+
+#---------------------------------------Uniques---------------------------------#
+
+Show
+    Rarity Unique 
+    BaseType "Sorcerer Boots" "Occultist's Vestment" "Crusader Boots" "Rawhide Boots" "Ezomyte Tower Shield" "Deicide Mask" "Glorious Plate" "Ezomyte Burgonet" "Assassin's Garb" "Sapphire Flask" "Topaz Flask" "Ruby Flask" "Void Axe" "Prophecy Wand" "Jewelled Foil" "Royal Axe" "Cutlass" "Greatwolf Talisman" "Silver Flask" "Stibnite Flask"
+    SetFontSize 42
+    SetBackgroundColor 225 225 225 255
+    SetBorderColor 219 132 36
+    PlayAlertSound 6 200
+
+Show
+    Rarity Unique
+    BaseType "Bismuth Flask" "Granite Flask" "Fiend Dagger" "Imperial Staff" "Carnal Sceptre" "Siege Axe" "Abyssal Axe" "Sacrificial Garb" "Ritual Sceptre" "Judgement Staff" "Vaal Sceptre" "Imperial Maul" "Steelhead" "Carnal Sceptre" "Terror Maul" "Jingling Spirit Shield" "Savant's Robe" "Gladiator Plate" "Vaal Regalia" "Sacrificial Garb" "Archon Kite Shield" "Legion Gloves" "Raven Mask" "Champion Kite Shield" "Nightmare Bascinet" "Clasped Mitts" "Wyrmscale Doublet" "Gold Ring" "Crystal Belt" "Citrine Amulet"
+    SetFontSize 38
+    SetBackgroundColor 219 132 36
+    SetTextColor 0 0 0
+    PlayAlertSound 6 200
+Show
+    Rarity Unique
+    SetBorderColor 219 132 36
+    
+    
+#---------------------------------------Maps------------------------------------#    
+Show 
+    Class Maps
+    DropLevel > 77
+    SetBorderColor 250 0 0
+    SetFontSize 42
+    
+Show 
+    Class Maps
+    DropLevel > 72
+    SetFontSize 38
+    SetBorderColor 250 250 0
+
+Show 
+    Class Maps
+    SetBorderColor 255 255 255
+
+Show 
+    Class "Map Fragments"
+    SetBorderColor 250 0 0 
+#---------------------------------------Sockets---------------------------------#
+
+Show 
+    Sockets 6
+    LinkedSockets 6
+    SetBackgroundColor 0 200 0
+    
+Show 
+    Sockets 6
+    SetBackgroundColor 0 150 0    
+
+Show
+    SocketGroup RGB
+    Height 2
+    Width 2
+    SetBorderColor  0 150 0
+
+Show
+    SocketGroup RGB
+    Height 3
+    Width 1
+    SetBorderColor  0 175 0
+
+Show
+    SocketGroup RGB
+    SetBorderColor  0 100 0
+    
+#
+#
+
+Show
+    Class Gems
+    BaseType "Enlighten" "Enhance" "Empower" "Added Chaos Damage Support" "Portal" "Vaal"
+    SetBorderColor 0 100 100
+    
+Show 
+    Class Gems
+    Quality = 20
+    SetBorderColor 250 0 250
+    
+Show 
+    Class Gems
+    Quality > 10
+    SetBorderColor 150 0 150    
+
+#Flask
+#
+#
+
+Show 
+    Class "Flasks"
+    Quality = 20
+    SetBorderColor 250 0 250
+
+Show 
+    Class "Flasks"
+    Quality > 10
+    SetBorderColor 150 0 150    
+
+Show 
+    Class "Utility Flasks"
+    SetBorderColor 200 200 100
+
+
+#Basetypes
+Show
+    Rarity Rare
+    Class "Amulets" "Rings" "Belts"
+    SetBorderColor 200 200 200
+Show
+    BaseType "Opal Ring" "Crystal Belt" 
+    SetBackgroundColor 200 200 200
+    
+Show
+    Class "Divination Card"
+    SetBorderColor 0 0 250
+    
+
+
+#---------------------------------------Other---------------------------------------#
+Show
+    Class "Fishing Rod"
+    
+Show
+    BaseType "Albino Rhoa Feather"
+    
+Show 
+    BaseType "Leaguestone"
+Show
+    Class "Quest Item" "Lab"
+    SetTextColor 200 0 200
+    SetBorderColor  200 0 200
+    SetFontSize 38
+    
+Hide
+    Rarity < Rare
+    ItemLevel > 20
+    DropLevel < 20
+
+    
+Hide
+    Rarity < Unique
+    ItemLevel > 60
+    DropLevel < 60
+    
+Hide
+    Rarity < Rare
+
+Show
+    Rarity = Rare
+    ItemLevel >= 60
+    SetBorderColor 0 100 200
+
+Show
+    SetBackgroundColor 0 100 200
